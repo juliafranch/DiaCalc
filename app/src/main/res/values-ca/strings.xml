@@ -6,4 +6,12 @@
     <string name="action_settings">Preferències</string>
     <string name="weight_in_grams">Pes (en grams)</string>
     <string name="calculate">Calcular</string>
+
+    <string-array name="food_array">
+        <item>Pa</item>
+        <item>Arròs</item>
+        <item>Pasta</item>
+        <item>Patates</item>
+        <item>Cigrons</item>
+    </string-array>
 </resources>
