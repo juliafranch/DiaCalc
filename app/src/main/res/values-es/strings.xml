@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="navigation_drawer_open">Abrir el cajón de navegación</string>
+    <string name="navigation_drawer_close">Cerrar el cajón de navegación</string>
+
+    <string name="action_settings">Preferencias</string>
+    <string name="weight_in_grams">Peso (en gramos)</string>
+    <string name="calculate">Calcular</string>
+</resources>

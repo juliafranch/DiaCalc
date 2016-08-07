@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="navigation_drawer_open">Obre el calaix de navegació</string>
+    <string name="navigation_drawer_close">Tanca el calaix de navegació</string>
+
+    <string name="action_settings">Preferències</string>
+    <string name="weight_in_grams">Pes (en grams)</string>
+    <string name="calculate">Calcular</string>
+</resources>
