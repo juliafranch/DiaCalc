@@ -20,7 +20,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, AdapterView.OnItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, AdapterView.OnItemSelectedListener, View.OnClickListener {
 
     private TextView mainNumber;
     private EditText insertWeight;
@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity
                 R.array.food_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mainSpinner.setAdapter(adapter);
+
+        calculateButton.setOnClickListener(this);
     }
 
     @Override
@@ -132,6 +134,11 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
+
+    @Override
+    public void onClick(View view) {
 
     }
 }
