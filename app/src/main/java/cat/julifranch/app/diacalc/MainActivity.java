@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity
     private EditText insertWeight;
     private Spinner mainSpinner;
     private Button calculateButton;
+    private int valorHidrats;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,7 +130,23 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+        switch (i){
+            case 0: //Bread
+                valorHidrats = 20;
+                break;
+            case 1: //Rice
+                valorHidrats = 38;
+                break;
+            case 2: //Pasta
+                valorHidrats = 50;
+                break;
+            case 3: //Potatoes
+                valorHidrats = 50;
+                break;
+            case 4: //Chickpeas
+                valorHidrats = 50;
+                break;
+        }
     }
 
     @Override
@@ -139,6 +156,9 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View view) {
-
+        String textIntro = insertWeight.getText().toString();
+        int valorIntro = Integer.parseInt(textIntro);
+        String num = Integer.toString(valorIntro/valorHidrats);
+        mainNumber.setText(num);
     }
 }
